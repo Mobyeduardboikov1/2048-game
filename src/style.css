@@ -1,0 +1,84 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  width: fit-content;
+  padding: 10px;
+  background-color: #bbada0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #eee4da;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #ecc37a;
+  position: absolute;
+  transition: left 0.8s ease, top 0.8s ease;
+}
+
+#game-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+}
+#score-div, #status-div {
+  font-size: 20px;
+  padding: 20px;
+  width: 168px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #ecc37a;
+  
+}
+
+
+.debug-table {
+  margin-top: 20px;
+  border-collapse: collapse;
+
+}
+
+.debug-table tr, .debug-table td {
+  border: 1px solid black;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+}
+.debug-table td.full {
+  background-color: #ecc37a;
+}
